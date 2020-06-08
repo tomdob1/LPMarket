@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="css/mediarules.css"> <!-- links to css-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+		<script type="text/javascript" src="js/menu.js"></script> <!--links to menu javascript-->
+		
+	</head>
+	<body>
+	
+	<div class="wrapper">
+	<div class="header"> <!--displays lp market logo-->
+		<a href="home.html"><img src="images/logo.png" alt="LP Market Logo" width="200" height="30" ></a>
+	</div>
+
+	
+	<div class="menu" id="mobileMenu"> <!--display the css menu, if width is below 480 px display mobile menu code used from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+		<a href="home.html" class="mobileHome">Home</a> <!-- https://www.w3schools.com/css/css_navbar.asp Navigation bar -->
+		<a href="product.html">Product Page</a>
+		<a href="orderform.html">Order Form</a>
+		<a href="account.html">Account</a>
+		<a href="report.html">Report</a>
+		<a href="javascript:void(0);" class="mobileIcon" onclick="mobileNavFunction()">&#9776;</a> 
+	</div>
+	
+	<div class="introduction"> <!-- introduction image -->
+		<img src="images/image.jpg" alt="Introduction Image LP Market" width="100%" height="150px" class="introImage">
+	</div>
+	<br><br>
+	<div class="content"> <!-- used for main content-->
+		
+		<img class="rnb" src="images/frank.jpg" alt="RnB" onclick="javascript:rnbMenu()"> <!--displays rnb category image. Onclick runs function to display albums-->
+		<div id="rnbContent" class="rnbContent">
+		</div><br><br>
+		<img class="hiphop" src="images/trav.jpg" alt="Hip-Hop" onclick="javascript:hiphopMenu()"> <!--displays hiphop category image. Onclick runs function to display albums-->
+		<div id="hiphopContent" class="hiphopContent">
+		</div>
+		
+	</div>
+	
+
+	<br>
+	<div class="footer"> <!--footer-->
+	
+	
+	
+	&copy; 2018 Tomasz Dobrowolski All Rights Reserved   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download the LP Market APP &#8594;&nbsp;<a href="App/LPMarket.apk" download><img src="images/logo.jpg" style=" width: 25px;"></a>
+	
+	</div>
+	</div>
+	
+	
+	</body>
+</html>

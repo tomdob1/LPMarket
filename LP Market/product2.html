@@ -1,0 +1,17 @@
+<?php 
+include "connect.php";
+$sql = "SELECT * FROM albums";
+$output = mysqli_query($con, $sql);
+?>
+<html>
+<body>
+<?php
+			while ($row=mysqli_fetch_assoc($output)){ //fetch result
+				echo "ID:".$row["ID"]. //string with results
+					 "<br>Title:".$row["title"].
+					 "<br>Artist:".$row["artist"].
+					 "<a href=details.php?ID=".$row["ID"].">link</a>"
+			}
+?>
+</body>
+</html>

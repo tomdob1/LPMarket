@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Order Form</title>
+		<link rel="stylesheet" type="text/css" href="css/mediarules.css"> <!--Links css to webpage-->
+		<script type="text/javascript" src="js/form.js"></script>  <!--Links form.js (javascript) to webpage-->
+	</head>
+	<body onload = "javascript:displayTotal()"> <!-- When webpage loads run the function displayTotal-->
+	
+	<div class="wrapper">
+	<div class="header">
+		<a href="home.html"><img src="images/logo.png" alt="LP Market Logo" width="200" height="30"></a> <!-- Displays logo -->
+	</div>
+	
+	<div class="menu" id="mobileMenu">  <!--display the css menu, if width is below 480 px display mobile menu code used from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+		<a href="home.html" class="mobileHome">Home</a> <!-- https://www.w3schools.com/css/css_navbar.asp Navigation bar -->
+		<a href="product.html">Product Page</a>
+		<a href="orderform.html">Order Form</a>
+		<a href="account.html">Account</a>
+		<a href="report.html">Report</a>
+		<a href="javascript:void(0);" class="mobileIcon" onclick="mobileNavFunction()">&#9776;</a> <!-- Mobile menu Icon. Only visible when viewed below a screen width of under 480 px-->
+	</div>
+	<div id="demo"></div>
+
+
+	
+	<div class="content">
+		<div id="errorMessage" class="errorMessage"></div> <!--Div area used to display error messages from validation checks-->
+		<div id="error" class="jSText"></div> 
+		<br>
+		<div id="cost" class="cost"></div> <!--Div used to display information of album within the basket, such as cost, album cover, album name and artist. Area is grey to distinguish area difference between the product area and the personal information input area-->
+		<br>
+		<div class="content2"> <!--Used to style content2 area in a different style to content class-->
+		<form name="details" action="#" id="personalInfoForm"> <!--Creates a drop down menu for title with specific options -->
+			<p><label for="title">Title*<br></label><select name="title">
+				<option value="Mr">Mr</option>
+				<option value="Mrs">Mrs</option>
+				<option value="Miss">Miss</option>
+				<option value="Dr">Dr</option>
+				<option value="Sir">Sir</option>
+			</select><br>
+			First Name:*<br> <!-- Inputs for personal information as text. * are essential inputs in order to submit-->
+			<input name="firstname" type="text" id="firstName1"/><br>
+			Last Name:*<br>
+			<input name="lastname" type="text" id="lastName"/><br>
+			Email:*<br>
+			<input name="email"    type="text" id="email"/><br>
+			Address Line 1:*<br>
+			<input name="address1" type="text" id="address1"/><br>
+			Address Line 2:<br>
+			<input name="address2" type="text" id="address2"/><br>
+			City:*<br>
+			<input name="city"     type="text" id="city"/><br>
+			County:<br>
+			<input name="county"   type="text" id="county"/><br>
+			Postcode:*<br>
+			<input name="postcode" type="text" id="postcode"/><br>
+			Country:<br>
+			<input name="country" type="text" id="country"/><br>
+		</form>
+			
+			
+		
+		<form name="payment" action="#" id="paymentForm"> <!-- Form used to generate radio buttons for different payment types-->
+			<p><label for="paymentmethod">Payment Method?</label>
+				<input type="radio" name="paymentType" value="Debit Card" onchange="javascript:debitCard()" id="debitRadio"> Debit Card<br> <!-- Runs debitCard javascript function which generates inputs for debit card users-->
+				<input type="radio" name="paymentType" value="Credit Card" onchange="javascript:creditCard()" id="creditRadio"> Credit Card<br><!-- Runs creditCard javascript function which generates inputs for credit card users-->
+				<input type="radio" name="paymentType" value="Voucher" onchange="javascript:voucher()" id="voucherRadio"> Voucher<br><!-- Runs voucher function javascript function which generates inputs for voucher users -->
+		</form>
+		
+
+		</div>
+		<div id="inputPayment" class="jSText"><p> <!-- Div used to insert specific payment inputs dependent on the radio button checked-->
+		
+		</div>
+	</div>
+	
+			
+
+	<div class="footer"> <!--footer-->
+	
+	
+	
+	&copy; 2018 Tomasz Dobrowolski All Rights Reserved   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download the LP Market APP &#8594;&nbsp;<a href="App/LPMarket.apk" download><img src="images/logo.jpg" style=" width: 25px;"></a>
+	
+	</div>
+	</div>
+	
+	
+	</body>
+</html>

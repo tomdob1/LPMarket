@@ -1,0 +1,120 @@
+Products page generated from database
+User Accounts
+Shopping Cart
+Adminitrator page
+
+
+albums
+id pk int
+album name varchar
+artist name varchar
+price int
+
+
+UPDATE albums
+SET image = '9.99'
+WHERE ID = '1';
+
+UPDATE albums
+SET price = '7.98'
+WHERE ID = '2';
+
+UPDATE albums
+SET price = '7.98'
+WHERE ID = '3';
+
+UPDATE albums
+SET price = '8.99'
+WHERE ID = '4';
+
+UPDATE albums
+SET price = '7.99'
+WHERE ID = '5';
+
+UPDATE albums
+SET price = '7.99'
+WHERE ID = '6';
+
+UPDATE albums
+SET price = '10.15'
+WHERE ID = '7';
+
+UPDATE albums
+SET price = '5.32'
+WHERE ID = '8';
+
+UPDATE albums
+SET price = '12.98'
+WHERE ID = '9';
+
+UPDATE albums
+SET price = '7.99'
+WHERE ID = '10';
+
+UPDATE albums
+SET price = '7.29'
+WHERE ID = '11';
+
+UPDATE albums
+SET price = '8.99'
+WHERE ID = '12';
+
+
+Internet Application
+50% - 81% - 40.5
+50% - NEED 59% for a first (LOW 2:1) NEED Low first
+
+Info Systems
+15% - 35/40 - 13%
+70% - 85% - 59.5% total = 72.5% - NEED 85
+15% - 
+
+Info Tech 
+25% - 74% - 18.5
+25% - 60% - 15 target
+20% - 70% - 14 target
+30% - 75% - 22.5 target
+
+PPM
+30% - 89% - 26.7%
+70% - NEED 61.85 for first (LOW 2:1) NEED low first
+
+Database  
+50% - 89% - 44.5
+50% - NEED 51% for first (LOW 2:2) - NEED 80 (1st)
+
+Understanding IT
+30% - 68% - 20.4
+70% - 70.8 (low first) needed for first 
+
+could get 60% which would put me to 62%
+
+
+
+
+products page:
+	master-detail page 24/03/2018 - 25/03/2018 done
+	images of products done
+	recommendations made when looking at the details of a product
+
+Member/profile page:
+	register to website  26/03/2018 - 01/04/2018  27/03 tuesday
+	user account page where details can be modified 28/03 tuesday
+	wish list 04/04 
+	view purchase history 04/04
+
+shopping basket: 02/04/2018 - 09/04/2018
+	add items to a basket and review before purchase 01/04
+	self-coded - ability to remove products 02/04
+	basket contents go to order history 02/04
+	basket are table specific 03/04
+	sessions are used 03/04
+	
+Handle non logged in users  10/04/2018 - 16/04/2018
+
+Administrator functions  
+	admin can log in
+Report - 23/04/2018/ - 26/04/2018
+	
+ 
+
